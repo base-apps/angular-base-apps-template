@@ -1,5 +1,5 @@
 {
-  "name": "foundation-apps-template",
+  "name": "angular-base-apps-template",
   "version": "1.2.0",
   "scripts": {
     "start": "brunch watch --server",
