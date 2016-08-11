@@ -1,9 +1,10 @@
 {
   "name": "angular-base-apps-template",
-  "version": "1.2.0",
+  "version": "1.2.6",
   "scripts": {
     "start": "brunch watch --server",
-    "prod": "brunch build --production"
+    "prod": "brunch build --production",
+    "test": "./node_modules/karma/bin/karma start"
   },
   "dependencies": {
     "angular": "^1.5.3",
