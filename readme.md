@@ -61,5 +61,5 @@ npm run prod
 To run unit tests with [karma](http://karma-runner.github.io):
 
 ```bash
-npm run test
+npm test
 ```
