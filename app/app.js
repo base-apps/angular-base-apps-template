@@ -6,12 +6,16 @@ import 'angular-base-apps/dist/js/base-apps';
 import 'angular-base-apps/dist/js/base-apps-templates';
 import 'angular-dynamic-routing/dynamicRouting';
 import 'angular-dynamic-routing/dynamicRouting.animations';
+import 'angular-icons/dist/iconic';
+import 'angular-icons/dist/open-iconic';
+import 'angular-icons/dist/ionicons';
+import 'angular-icons/dist/material-icons';
 
 const AppConfig = ($urlProvider, $locationProvider) => {
   $urlProvider.otherwise('/');
 
   $locationProvider.html5Mode({
-    enabled:false,
+    enabled: false,
     requireBase: false
   });
 };
@@ -27,6 +31,12 @@ angular.module('application', [
 
   // base apps
   'base',
+
+  // icons
+  'angularIcons.iconic',
+  'angularIcons.openIconic',
+  'angularIcons.ionicons',
+  'angularIcons.materialIcons',
 
   // dynamic routing
   'dynamicRouting',
