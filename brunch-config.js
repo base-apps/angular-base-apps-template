@@ -24,7 +24,7 @@ module.exports = {
         gulp.src('./app/assets/**/*.html')
           .pipe(router({
             path: './public/js/routes.js',
-            root: './'
+            root: './app/assets'
           }))
           .pipe(gulp.dest('./public'));
         init = false;
