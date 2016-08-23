@@ -1,3 +1,6 @@
+var gulp = require('gulp');
+var router = require('base-apps-router');
+
 module.exports = {
   files: {
     javascripts: {
@@ -10,5 +13,18 @@ module.exports = {
 
   plugins: {
     babel: { presets: ['es2015'] }
+  },
+
+  optimize: false,
+
+  hooks: {
+    onCompile: function () {
+      gulp.src('./app/assets/**/*.html')
+        .pipe(router({
+          path: './public/js/routes.js',
+          root: './'
+        }))
+        .pipe(gulp.dest('./public'));
+    }
   }
 };
