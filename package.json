@@ -8,12 +8,12 @@
   },
   "dependencies": {
     "angular": "^1.5.3",
-    "angular-base-apps": "1.2.7-5",
+    "angular-base-apps": "1.2.7-7",
     "angular-dynamic-routing": "^1.0.1",
-    "angular-front-router": "^1.1.1",
     "angular-icons": "^1.0.0",
     "angular-route": "^1.5.3",
     "angular-ui-router": "^0.2.18",
+    "base-apps-router": "^1.2.0",
     "fastclick": "^1.0.6"
   },
   "devDependencies": {
