@@ -5,6 +5,8 @@ powered by [Babel](https://babeljs.io/) and [Brunch](http://brunch.io).
 It provides you with a sensible defaults to bootstrap your application on a modern
 language platform with compile time safety across the entire stack of static resources.
 
+[![GitHub version](https://badge.fury.io/gh/base-apps%2Fangular-base-apps-template.svg)](https://badge.fury.io/gh/base-apps%2Fangular-base-apps-template)
+
 ## Features
   
   * ES6 by default
