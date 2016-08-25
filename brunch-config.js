@@ -1,6 +1,5 @@
-var gulp = require('gulp');
+var fs = require('fs');
 var router = require('base-apps-router');
-var init = true;
 
 module.exports = {
   files: {
@@ -20,15 +19,15 @@ module.exports = {
 
   hooks: {
     onCompile: function () {
-      if (init) {
-        gulp.src('./app/assets/**/*.html')
-          .pipe(router({
-            path: './public/js/routes.js',
-            root: './app/assets'
-          }))
-          .pipe(gulp.dest('./public'));
-        init = false;
-      }
+      fs.unlinkSync('./public/js/routes.js');
+
+      router({
+        src: './app/assets/**/*.html',
+        dest: './public',
+        path: './public/js/routes.js',
+        root: './app/assets',
+        library: 'angular'
+      });
     }
   }
 };

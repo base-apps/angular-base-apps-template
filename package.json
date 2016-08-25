@@ -27,7 +27,6 @@
     "css-brunch": "^2.0.0",
     "eslint": "^2.12.0",
     "eslint-brunch": "^3.6.0",
-    "gulp": "^3.9.1",
     "html-pages-brunch": "^2.0.0",
     "javascript-brunch": "^2.0.0",
     "karma": "~0.12.23",
