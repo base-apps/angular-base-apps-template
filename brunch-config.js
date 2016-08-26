@@ -19,14 +19,13 @@ module.exports = {
 
   hooks: {
     onCompile: function () {
-      fs.unlinkSync('./public/js/routes.js');
-
       router({
         src: './app/assets/**/*.html',
         dest: './public',
         path: './public/js/routes.js',
         root: './app/assets',
-        library: 'angular'
+        library: 'angular',
+        overwrite: true
       });
     }
   }
