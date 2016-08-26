@@ -17,9 +17,9 @@
       files: [
         'https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.4/jasmine.min.js',
         'public/js/app.js',
-        'karmaboot.js',
-        'node_modules/angular-mocks/angular-mocks.js',
-        'node_modules/angular-mocks/angular-scenario.js',
+        //'karmaboot.js',
+        //'node_modules/angular-mocks/angular-mocks.js',
+        //'node_modules/angular-scenario/angular-scenario.js',
         'app/**/*.spec.js'
       ],
 
