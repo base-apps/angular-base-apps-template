@@ -3,7 +3,6 @@ import 'angular-route';
 import 'angular-ui-router';
 import fs from 'fastclick';
 import 'angular-base-apps/dist/js/base-apps';
-import 'angular-base-apps/dist/js/base-apps-templates';
 import 'angular-dynamic-routing/dynamicRouting';
 import 'angular-dynamic-routing/dynamicRouting.animations';
 import 'angular-icons/dist/iconic';
