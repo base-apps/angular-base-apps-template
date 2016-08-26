@@ -5,6 +5,7 @@ powered by [Babel](https://babeljs.io/) and [Brunch](http://brunch.io).
 It provides you with a sensible defaults to bootstrap your application on a modern
 language platform with compile time safety across the entire stack of static resources.
 
+[![Build Status](https://travis-ci.org/base-apps/angular-base-apps-template.svg)](https://travis-ci.org/base-apps/angular-base-apps-template)
 [![GitHub version](https://badge.fury.io/gh/base-apps%2Fangular-base-apps-template.svg)](https://badge.fury.io/gh/base-apps%2Fangular-base-apps-template)
 
 ## Features
