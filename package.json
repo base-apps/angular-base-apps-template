@@ -1,6 +1,6 @@
 {
   "name": "angular-base-apps-template",
-  "version": "1.2.6",
+  "version": "2.0.0",
   "scripts": {
     "start": "brunch watch --server",
     "prod": "brunch build --production",
@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "angular": "^1.5.3",
-    "angular-base-apps": "1.2.7-9",
+    "angular-base-apps": "^2.0.0",
     "angular-dynamic-routing": "^1.0.1",
     "angular-icons": "^1.0.0",
     "angular-route": "^1.5.3",
