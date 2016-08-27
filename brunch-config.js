@@ -5,7 +5,11 @@ module.exports = {
   files: {
     javascripts: {
       joinTo: {
-        'js/app.js':  [/^(?!app)/,/^app/]
+        'js/app.js':  [
+          /^(?!app)/,
+          /^app/,
+          "!app/**/*.spec.js"
+        ]
       }
     },
     stylesheets: { joinTo: '/css/app.css' }

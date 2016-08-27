@@ -1,5 +1,5 @@
-describe('application', () => {
-  it('should be configured', () => {
+describe('application', function() {
+  it('should be configured', function() {
     expect(true).toBe(true);
   });
 });
