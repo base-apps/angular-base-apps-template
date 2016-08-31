@@ -1,5 +1,6 @@
-var fs = require('fs');
-var router = require('base-apps-router');
+const fs = require('fs');
+const router = require('base-apps-router');
+const mkdirp = require('mkdirp');
 
 module.exports = {
   files: {
@@ -27,6 +28,9 @@ module.exports = {
 
   hooks: {
     preCompile: (done) => {
+      // create config folder
+      mkdirp.sync('app/config');
+
       router({
         src: 'app/**/*.html',
         dest: 'build',
