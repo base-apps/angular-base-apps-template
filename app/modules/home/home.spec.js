@@ -1,19 +1,19 @@
 import 'modules/home';
 
-describe('HomeController', function() {
+describe('HomeController', () => {
   var controller;
 
-  beforeEach(function() {
+  beforeEach(() => {
     module('application.home');
 
-    inject(function($controller) {
+    inject(($controller) => {
       controller = $controller('HomeController');
     });
   });
 
-  describe('Messages', function() {
+  describe('Messages', () => {
 
-    it('should add message', function() {
+    it('should add message', () => {
       controller.submitMessage('message');
 
       expect(controller.messages.length).toEqual(1);
