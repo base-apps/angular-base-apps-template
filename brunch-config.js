@@ -30,7 +30,7 @@ module.exports = {
       router({
         src: 'app/**/*.html',
         dest: 'build',
-        path: 'app/config-routes.js',
+        path: 'app/config/config-routes.js',
         root: 'app',
         library: 'angular',
         overwrite: true
@@ -47,6 +47,12 @@ module.exports = {
         library: 'angular',
         overwrite: true
       });
+    }
+  },
+
+  overrides: {
+    production: {
+      optimize: true
     }
   }
 };

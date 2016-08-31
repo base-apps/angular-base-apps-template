@@ -4,7 +4,7 @@
   "scripts": {
     "start": "brunch watch --server",
     "build": "brunch build",
-    "prod": "brunch build --production",
+    "prod": "brunch build --production --env production",
     "test": "karma start",
     "test-debug": "karma start -single-run=false --debug"
   },
@@ -34,7 +34,7 @@
     "karma-babel-preprocessor": "^6.0.1",
     "karma-chrome-launcher": "^2.0.0",
     "karma-jasmine": "^1.0.2",
-    "karma-spec-reporter": "0.0.26",
+    "karma-spec-reporter": "^0.0.26",
     "sass-brunch": "^1.8.10",
     "uglify-js-brunch": "^2.0.0"
   }

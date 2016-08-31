@@ -11,10 +11,10 @@ import 'angular-icons/dist/material-icons';
 // Route Configuration
 import 'angular-dynamic-routing/dynamicRouting';
 import 'angular-dynamic-routing/dynamicRouting.animations';
-import './config-routes';
+import './config/config-routes';
 
 // Module Configuration
-import './modules/home';
+import './modules';
 
 // Application Configuration
 const AppConfig = ($urlProvider, $locationProvider) => {
@@ -34,6 +34,7 @@ const AppRun = () => {
 
 angular.module('application', [
   'ui.router',
+  'ngAnimate',
 
   // base apps
   'base',
