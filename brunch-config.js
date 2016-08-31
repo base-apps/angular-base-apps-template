@@ -5,29 +5,45 @@ module.exports = {
   files: {
     javascripts: {
       joinTo: {
-        'js/app.js':  [
-          /^(?!app)/,
-          /^app/,
-          "!app/**/*.spec.js"
-        ]
+        'js/app.js':  [/^app/,"!**/*.spec.js"],
+        'js/vendor.js':  [/^(?!app)/,/^(?!test)/,"!**/*.spec.js"]
       }
     },
-    stylesheets: { joinTo: '/css/app.css' }
+    stylesheets: {
+      joinTo: '/css/app.css'
+    }
   },
 
   plugins: {
-    babel: { presets: ['es2015'] }
+    babel: {
+      presets: ['es2015']
+    },
+    htmlPages: {
+      forceRemoveFrontMatter: true
+    }
   },
 
   optimize: false,
 
   hooks: {
+    preCompile: (done) => {
+      router({
+        src: 'app/**/*.html',
+        dest: 'build',
+        path: 'app/config-routes.js',
+        root: 'app',
+        library: 'angular',
+        overwrite: true
+      }).then(done);
+    },
+
+    // TODO: Remove once htmlPages supports forceRemoveFrontMatter option
     onCompile: function () {
       router({
-        src: './app/assets/**/*.html',
+        src: './public/**/*.html',
         dest: './public',
-        path: './public/js/routes.js',
-        root: './app/assets',
+        path: './build/routes.js',
+        root: './public',
         library: 'angular',
         overwrite: true
       });

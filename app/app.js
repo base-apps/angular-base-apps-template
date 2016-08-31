@@ -1,15 +1,22 @@
-import angular from 'angular';
-import 'angular-route';
-import 'angular-ui-router';
+// Angular Base Apps Configuration
 import fs from 'fastclick';
-import 'angular-base-apps/dist/js/base-apps';
-import 'angular-dynamic-routing/dynamicRouting';
-import 'angular-dynamic-routing/dynamicRouting.animations';
-import 'angular-icons/dist/iconic';
+import angular from 'angular';
+import 'angular-base-apps';
+
+// Icon Configuration
 import 'angular-icons/dist/open-iconic';
 import 'angular-icons/dist/ionicons';
 import 'angular-icons/dist/material-icons';
 
+// Route Configuration
+import 'angular-dynamic-routing/dynamicRouting';
+import 'angular-dynamic-routing/dynamicRouting.animations';
+import './config-routes';
+
+// Module Configuration
+import './modules/home';
+
+// Application Configuration
 const AppConfig = ($urlProvider, $locationProvider) => {
   $urlProvider.otherwise('/');
 
@@ -32,14 +39,16 @@ angular.module('application', [
   'base',
 
   // icons
-  'angularIcons.iconic',
   'angularIcons.openIconic',
   'angularIcons.ionicons',
   'angularIcons.materialIcons',
 
   // dynamic routing
   'dynamicRouting',
-  'dynamicRouting.animations'
+  'dynamicRouting.animations',
+
+  // modules
+  'application.home'
 ])
 .config(AppConfig)
 .run(AppRun);

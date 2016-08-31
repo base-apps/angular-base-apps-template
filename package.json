@@ -3,16 +3,16 @@
   "version": "2.0.0",
   "scripts": {
     "start": "brunch watch --server",
+    "build": "brunch build",
     "prod": "brunch build --production",
-    "test": "./node_modules/karma/bin/karma start"
+    "test": "karma start",
+    "test-debug": "karma start -single-run=false --debug"
   },
   "dependencies": {
-    "angular": "^1.5.3",
+    "angular": "^1.5.8",
     "angular-base-apps": "^2.0.0",
     "angular-dynamic-routing": "^1.0.1",
     "angular-icons": "^1.0.0",
-    "angular-route": "^1.5.3",
-    "angular-ui-router": "^0.2.18",
     "fastclick": "^1.0.6"
   },
   "devDependencies": {
@@ -28,11 +28,13 @@
     "eslint": "^2.12.0",
     "eslint-brunch": "^3.6.0",
     "html-pages-brunch": "^2.0.0",
+    "jasmine-core": "^2.5.0",
     "javascript-brunch": "^2.0.0",
-    "karma": "~0.12.23",
-    "karma-babel-preprocessor": "^6.0.0",
-    "karma-chrome-launcher": "~0.1.4",
-    "karma-jasmine": "~0.1.5",
+    "karma": "^1.2.0",
+    "karma-babel-preprocessor": "^6.0.1",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-jasmine": "^1.0.2",
+    "karma-spec-reporter": "0.0.26",
     "sass-brunch": "^1.8.10",
     "uglify-js-brunch": "^2.0.0"
   }
