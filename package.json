@@ -5,6 +5,7 @@
     "start": "brunch watch --server",
     "build": "brunch build",
     "prod": "brunch build --production --env production",
+    "clean": "rm -r public",
     "test": "karma start",
     "test-debug": "karma start -single-run=false --debug"
   },
