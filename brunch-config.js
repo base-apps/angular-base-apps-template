@@ -19,6 +19,11 @@ module.exports = {
     babel: {
       presets: ['es2015']
     },
+    eslint: {
+      // do not fail build when running against config-routes.js
+      pattern: /^app\/config\/config-routes\.js$/,
+      warnOnly: true
+    },
     htmlPages: {
       forceRemoveFrontMatter: true
     }
