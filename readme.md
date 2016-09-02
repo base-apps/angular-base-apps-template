@@ -57,7 +57,7 @@ This will compile your front end resource and assemble your Angular app.
 To build your app for production, run:
 
 ```bash
-npm run prod
+npm run production
 ```
 
 To run unit tests with [karma](http://karma-runner.github.io):
