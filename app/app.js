@@ -11,22 +11,24 @@ import 'angular-icons/dist/material-icons';
 // Route Configuration
 import 'angular-dynamic-routing/dynamicRouting';
 import 'angular-dynamic-routing/dynamicRouting.animations';
-import './config/config-routes';
+import routeconfig from './config/config-routes';
 
 // Module Configuration
 import './modules';
 
 // Application Configuration
-const AppConfig = ($urlProvider, $locationProvider) => {
+const AppConfig = ($urlProvider, $locationProvider, $BaseAppsStateProvider) => {
   $urlProvider.otherwise('/');
 
   $locationProvider.html5Mode({
     enabled: false,
     requireBase: false
   });
+
+  $BaseAppsStateProvider.registerDynamicRoutes(routeconfig);
 };
 
-AppConfig.$inject = ['$urlRouterProvider', '$locationProvider'];
+AppConfig.$inject = ['$urlRouterProvider', '$locationProvider', '$BaseAppsStateProvider'];
 
 const AppRun = () => {
   fs.FastClick.attach(document.body);

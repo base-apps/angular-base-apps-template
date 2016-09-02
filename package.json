@@ -2,13 +2,14 @@
   "name": "angular-base-apps-template",
   "version": "2.0.0",
   "scripts": {
-    "start": "npm run clean && brunch watch --server",
-    "build": "npm run clean && brunch build",
-    "prod": "npm run clean && brunch build --production --env production",
-    "clean": "(rm -r public || true) && (rm app/config/config-routes.js || true)",
-    "test": "if [ -d ./app/public ]; then npm run test-karma; else npm run build && npm run test-karma; fi;",
-    "test-karma": "karma start",
-    "test-debug": "karma start -single-run=false --debug"
+    "start": "brunch watch --server",
+    "prod": "brunch build --production --env production",
+    "precompile": "(rm -r public || true) && (rm app/config/config-routes.js || true)",
+    "compile": "brunch build",
+    "pretest": "npm run compile",
+    "test": "npm run test-only",
+    "test-only": "karma start",
+    "test-debug": "karma start --single-run=false --debug"
   },
   "dependencies": {
     "angular": "^1.5.8",
