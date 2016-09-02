@@ -3,13 +3,14 @@
   "version": "2.0.0",
   "scripts": {
     "start": "brunch watch --server",
-    "prod": "brunch build --production --env production",
-    "precompile": "(rm -r public || true) && (rm app/config/config-routes.js || true)",
-    "compile": "brunch build",
-    "pretest": "npm run compile",
+    "prebuild": "(rm -r public || true) && (rm app/config/config-routes.js || true)",
+    "build": "brunch build",
+    "pretest": "npm run build",
     "test": "npm run test-only",
     "test-only": "karma start",
-    "test-debug": "karma start --single-run=false --debug"
+    "test-debug": "karma start --single-run=false --debug",
+    "preproduction": "npm run prebuild",
+    "production": "brunch build --production --env production"
   },
   "dependencies": {
     "angular": "^1.5.8",
