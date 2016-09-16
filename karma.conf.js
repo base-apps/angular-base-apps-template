@@ -15,9 +15,11 @@
 
       // list of files / patterns to load in the browser
       files: [
-        'public/js/vendor.js',
-        'public/js/app.js',
+        'build/js/vendor.js',
+        'build/js/app.js',
         'test/karma.boot.js',
+        'node_modules/angular-mocks/angular-mocks.js',
+        'node_modules/angular-scenario/angular-scenario.js',
         'app/**/*.spec.js'
       ],
 
