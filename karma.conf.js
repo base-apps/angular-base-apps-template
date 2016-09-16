@@ -19,7 +19,6 @@
         'build/js/app.js',
         'test/karma.boot.js',
         'node_modules/angular-mocks/angular-mocks.js',
-        'node_modules/angular-scenario/angular-scenario.js',
         'app/**/*.spec.js'
       ],
 
