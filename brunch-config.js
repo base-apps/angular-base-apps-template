@@ -32,7 +32,7 @@ module.exports = {
     },
     eslint: {
       // do not fail build when running against config-routes.js
-      pattern: /^config-routes\.js$/,
+      pattern: /^(app)\/(?!config).*\.js?$/,
       warnOnly: true
     },
     htmlPages: {
