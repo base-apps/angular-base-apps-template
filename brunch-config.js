@@ -36,6 +36,11 @@ module.exports = {
     },
     htmlPages: {
       forceRemoveFrontMatter: true
+    },
+    modernizr: {
+      destination: 'js/modernizr.js',
+      options: [],
+      tests: ['flexbox']
     }
   },
 
