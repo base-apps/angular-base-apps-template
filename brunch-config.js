@@ -10,7 +10,7 @@ module.exports = {
   },
 
   paths: {
-    'public':   'build',
+    'public':   'public',
     'watched':  ['app']
   },
 
@@ -46,7 +46,6 @@ module.exports = {
 
       router({
         src: 'app/**/*.html',
-        dest: 'build',
         path: 'app/config/config-routes.js',
         root: 'app',
         library: 'node',
