@@ -41,6 +41,11 @@ module.exports = {
       destination: 'js/modernizr.js',
       options: [],
       tests: ['flexbox']
+    },
+    postcss: {
+      processors: [
+        require('autoprefixer')(['> 1%', 'last 2 versions', 'ie >= 10', 'iOS >= 7', 'Safari >= 7', 'Opera >= 25'])
+      ]
     }
   },
 
