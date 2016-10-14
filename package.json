@@ -17,6 +17,7 @@
     "angular-base-apps": "^2.0.0",
     "angular-dynamic-routing": "^1.0.1",
     "angular-icons": "^1.0.0",
+    "angular-ui-router": "~0.3.1",
     "fastclick": "^1.0.6"
   },
   "devDependencies": {

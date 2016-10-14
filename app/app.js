@@ -2,6 +2,7 @@
 import fs from 'fastclick';
 import angular from 'angular';
 import 'angular-base-apps';
+import 'angular-ui-router';
 
 // Icon Configuration
 import 'angular-icons/dist/open-iconic';
