@@ -27,7 +27,7 @@
     "babel-brunch": "~6.0.0",
     "babel-preset-es2015": "~6.3.13",
     "base-apps-router": "^1.2.0",
-    "brunch": "^2.4.0",
+    "brunch": "~2.8.2",
     "clean-css-brunch": "^2.0.0",
     "css-brunch": "^2.0.0",
     "eslint": "^3.0.0",
