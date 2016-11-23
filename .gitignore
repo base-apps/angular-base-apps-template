@@ -4,3 +4,4 @@ npm-debug.log
 bower_components
 .sass-cache
 app/config/config-routes.js
+public
