@@ -65,7 +65,7 @@ To run unit tests with [karma](http://karma-runner.github.io):
 ```bash
 npm test
 ```
-#Running in Vagrant box
+# Running in Vagrant box
 You can add following lines to your index.hmtl to resolve websocket issues.
 ```html
 <script>
