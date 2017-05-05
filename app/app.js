@@ -1,6 +1,5 @@
 // Angular Base Apps Configuration
 import fs from 'fastclick';
-import angular from 'angular';
 import 'angular-base-apps';
 import 'angular-ui-router';
 
